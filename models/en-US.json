@@ -1,0 +1,120 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "my radio",
+      "intents": [
+        {
+          "name": "AMAZON.CancelIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.HelpIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StopIntent",
+          "samples": []
+        },
+        {
+          "name": "PlayAudio",
+          "slots": [
+            {
+              "name": "STATION",
+              "type": "STATION"
+            }
+          ],
+          "samples": [
+            "begin {STATION}",
+            "begin the {STATION}",
+            "begin playing the {STATION}",
+            "start {STATION}",
+            "start the {STATION}",
+            "start playing the {STATION}",
+            "play the {STATION}",
+            "to begin {STATION}",
+            "to begin radio",
+            "to start radio",
+            "to play {STATION}",
+            "to start {STATION}",
+            "to begin {STATION}"
+          ]
+        },
+        {
+          "name": "RadioStations",
+          "slots": [],
+          "samples": [
+            "what are the stations",
+            "station list",
+            "top stations",
+            "all stations"
+          ]
+        },
+        {
+          "name": "LoadMoreStations",
+          "slots": [],
+          "samples": ["more", "more stations"]
+        },
+        {
+          "name": "AMAZON.PauseIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.ResumeIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.PreviousIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.StartOverIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.YesIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NoIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NextIntent",
+          "samples": []
+        },
+        {
+          "name": "AMAZON.NavigateHomeIntent",
+          "samples": []
+        }
+      ],
+      "types": [
+        {
+          "name": "STATION",
+          "values": [
+            {
+              "id": "3",
+              "name": {
+                "value": "Kiss",
+                "synonyms": []
+              }
+            },
+            {
+              "id": "2",
+              "name": {
+                "value": "Fox",
+                "synonyms": ["f.o.x."]
+              }
+            },
+            {
+              "id": "1",
+              "name": {
+                "value": "ABC News",
+                "synonyms": ["a.b.c. news", "abc"]
+              }
+            }
+          ]
+        }
+      ]
+    }
+  }
+}
