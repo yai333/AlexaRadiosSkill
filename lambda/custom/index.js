@@ -3,7 +3,7 @@
 
 const Alexa = require("ask-sdk");
 const AWS = require("aws-sdk");
-const RADIO_DBNAME = "HKRadio";
+const RADIO_DBNAME = "MyRadio";
 const documentClient = new AWS.DynamoDB.DocumentClient();
 const PAGE_SIZE = 5;
 let constants = require("./constants");
