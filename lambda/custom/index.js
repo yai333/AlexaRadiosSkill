@@ -615,6 +615,6 @@ exports.handler = skillBuilder
   .addRequestInterceptors(LoadPersistentAttributesRequestInterceptor)
   .addResponseInterceptors(SavePersistentAttributesResponseInterceptor)
   .addErrorHandlers(ErrorHandler)
-  .withAutoCreateTable(true)
+  .withAutoCreateTable(false)
   .withTableName(constants.skill.dynamoDBTableName)
   .lambda();
