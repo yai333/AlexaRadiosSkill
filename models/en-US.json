@@ -1,7 +1,7 @@
 {
   "interactionModel": {
     "languageModel": {
-      "invocationName": "my radio",
+      "invocationName": "my radios",
       "intents": [
         {
           "name": "AMAZON.CancelIntent",

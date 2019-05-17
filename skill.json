@@ -6,7 +6,7 @@
           "summary": "Sample Short Description",
           "examplePhrases": [
             "Alexa, open My Radios",
-            "Alexa, ask My Radios to play ABC NEWS",
+            "Alexa, ask My Radios to play ABC News",
             "Alexa, tell My Radios to play Fox"
           ],
           "name": "My Radios",

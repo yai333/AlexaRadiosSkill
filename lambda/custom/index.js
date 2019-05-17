@@ -3,7 +3,7 @@
 
 const Alexa = require("ask-sdk");
 const AWS = require("aws-sdk");
-const RADIO_DBNAME = "MyRadio";
+const RADIO_DBNAME = "MyRadios";
 const documentClient = new AWS.DynamoDB.DocumentClient();
 const PAGE_SIZE = 5;
 let constants = require("./constants");
@@ -18,7 +18,7 @@ const LaunchRequestHandler = {
     let reprompt;
     if (!playbackInfo.hasPreviousPlaybackSession) {
       message =
-        "Welcome to the My Radio. Say play followed by the radio station name such as play ABC News, or say 'Help' for more options.";
+        "Welcome to the My Radios. Say play followed by the radio station name such as play ABC News, or say 'Help' for more options.";
       reprompt =
         "You can say, play followed by the radio station name such as play ABC News or say 'Help' for more options.";
     } else {
@@ -242,7 +242,7 @@ const HelpHandler = {
       }. Would you like to resume?`;
     } else {
       message =
-        "You are listening to My Radio. You can say, Next or Previous to navigate through the radio stations. At any time, you can say Pause to pause the audio and Resume to resume.";
+        "You are listening to My Radios. You can say, Next or Previous to navigate through the radio stations. At any time, you can say Pause to pause the audio and Resume to resume.";
     }
 
     return handlerInput.responseBuilder

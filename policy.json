@@ -1,0 +1,34 @@
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "PutUpdateDeleteOnMyRadiosDB",
+      "Effect": "Allow",
+      "Action": [
+        "dynamodb:DescribeTable",
+        "dynamodb:Query",
+        "dynamodb:Scan",
+        "dynamodb:GetItem",
+        "dynamodb:PutItem",
+        "dynamodb:UpdateItem",
+        "dynamodb:DeleteItem",
+        "dynamodb:CreateTable"
+      ],
+      "Resource": [
+        "arn:aws:dynamodb:us-east-1:ACCOUNT_ID:table/MyRadiosSession",
+        "arn:aws:dynamodb:us-east-1:ACCOUNT_ID:table/MyRadiosSession/index/*",
+        "arn:aws:dynamodb:us-east-1:ACCOUNT_ID:table/MyRadios",
+        "arn:aws:dynamodb:us-east-1:ACCOUNT_ID:table/MyRadios/index/*"
+      ]
+    },
+    {
+      "Action": [
+        "logs:CreateLogGroup",
+        "logs:CreateLogStream",
+        "logs:PutLogEvents"
+      ],
+      "Effect": "Allow",
+      "Resource": "arn:aws:logs:*:*:*"
+    }
+  ]
+}

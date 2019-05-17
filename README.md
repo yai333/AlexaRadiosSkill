@@ -1,5 +1,7 @@
 # Build An Radio Station Skill
 
+https://medium.com/@yia333/building-radio-stations-alexa-skill-with-the-alexa-skills-kit-376fc9537047
+
 ### This is a example of radio station skill like MyTuner RadioAPP
 
 ## Usage

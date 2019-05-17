@@ -1,7 +1,7 @@
 /* CONSTANTS */
 exports.skill = {
   appId: "",
-  dynamoDBTableName: "MyRadioSession"
+  dynamoDBTableName: "MyRadiosSession"
 };
 
 exports.audioData = [];
