@@ -1,0 +1,20 @@
+{
+    "Stations": [
+        {
+            "PutRequest": {
+                "Item": {
+                    "title": {"S": "ABC News"},
+                    "url": {"S": "https://your-streaming-url.m3u"}
+                }
+            }
+        },
+        {
+            "PutRequest": {
+                 "Item": {
+                    "title": {"S": "FOX"},
+                    "url": {"S": "https://your-streaming-url.m3u"}
+                }
+            }
+        }
+    ]
+}
